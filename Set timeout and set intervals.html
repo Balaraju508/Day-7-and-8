@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions</title>
+    </head>
+    <body>
+        <h4>Set timeout and set interval example</h4>
+        <button onclick="myfun()">Click here</button>
+        <script>
+            let timeout;
+            function myfun(){
+                timeout=setTimeout(alertFunc, 3200);
+            }
+            function alertFunc(){
+                alert("Please refresh the page");
+            }
+        </script>
+    </body>
+</html>

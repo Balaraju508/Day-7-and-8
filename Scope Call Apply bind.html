@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions</title>
+    </head>
+    <body>
+        <h4>Scope call apply bind example</h4>
+        <script>
+            let a={name:"bala"};
+            let b=function(c,d){
+                return `${c} ${this.name}. ${d}`;
+            };
+            document.write(b.call(a, "hello", "hi" )+"<br>");
+            document.write(b.apply(a, ["hello", "hi" ])+"<br>");
+            let bound=b.bind(a);
+            document.write(bound("hello", "hi" ));
+        </script>
+    </body>
+</html>

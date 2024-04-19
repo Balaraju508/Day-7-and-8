@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Function closure
+        </title>
+    </head>
+    <body>
+        <h3>Function closure example</h3>
+        <script>
+            function example(a,b){
+                return function example1(c,d){
+                    document.write(a*b+"<br>");
+                    document.write(c*d);
+                }
+            }
+            let exfun=example(1,2);
+            exfun(3,4);
+        </script>
+    </body>
+</html>
